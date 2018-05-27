@@ -6,9 +6,9 @@ pipeline {
         git 'https://github.com/apache/maven.git'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        sh '/root/apache-maven-3.3.9/bin/mvn --version'
+        sh 'sudo /root/apache-maven-3.3.9/bin/mvn --version'
       }
     }
   }
