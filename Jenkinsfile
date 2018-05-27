@@ -8,7 +8,8 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh 'sudo /root/apache-maven-3.3.9/bin/mvn --version'
+        sh '''/usr/local/bin/apache-maven-3.3.9/bin/mvn
+package'''
       }
     }
   }
