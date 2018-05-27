@@ -8,7 +8,16 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh '''/usr/local/bin/apache-maven-3.3.9/bin/mvn
+        sh '''
+
+
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0 &&
+
+
+
+
+/usr/local/bin/apache-maven-3.3.9/bin/mvn
 package'''
       }
     }
